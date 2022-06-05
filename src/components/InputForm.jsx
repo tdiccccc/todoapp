@@ -7,14 +7,13 @@ export const InputForm = ({ taskList, setTaskList }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // タスクを追加する
     setTaskList([
         ...taskList,
         {
             text: inputText
         }
     ]);
-     
+
   }
 
   const handleChange = (e) => {
